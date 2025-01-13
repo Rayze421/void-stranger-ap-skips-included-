@@ -6,7 +6,34 @@ from . import VoidStrangerWorld
 from .Constants import ItemNames, LocationNames
 from ..generic.Rules import set_rule, forbid_item
 
+def locustcount(world: VoidStrangerWorld):
+    #total amount of locusts youve obtained between normal and lucky (3x) locust idols
+    return # has(self, item: ItemNames.locust_idol, count: int=1), (self, item: ItemNames.tripled_locust, count: int=3): 
 
+def cancheat(world: VoidStrangerWorld):
+    #Notates if both UI Manipulation is recieved as an item, and Cheat Skip logic is enabled
+    return 
+
+def canbeeskip(world: VoidStrangerWorld):
+    #Notates if both Bee Statues are obtained as an item (or if idolsanity is off), and Bee Skip logic is enabled
+    return 
+
+def canfall(world: VoidStrangerWorld):
+    #Notates if both individual Shortcuts are recieved as an item (or if shortcutsanity is off), and Shortcut Skip logic is enabled
+    return 
+
+def canreachb053(world: VoidStrangerWorld):
+    #Notates if all of, can reach B053, individual brands are recieved as items, and Brand Skip logic is enabled
+    return 
+
+def canreachb157(world: VoidStrangerWorld):
+    #Notates if all of; can reach B157, individual brands are recieved as items, and Brand Skip logic is enabled
+    return 
+
+
+
+
+#All Below soon to be rewritten
 def set_rules(world: VoidStrangerWorld):
     #location rule logic
     if world.options.brandsanity and world.options.idolsanity and world.options.locustsanity and world.options.shortcutsanity:
